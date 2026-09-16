@@ -25,3 +25,6 @@ Before production:
 2. Replace the placeholder domain in `sitemap.xml`.
 3. Add a custom favicon/OG image if desired.
 4. Keep the page title and description aligned with the exact search intent you want to target.
+
+## Live Demo:
+https://chaoshelper.github.io/json-toolbox/
