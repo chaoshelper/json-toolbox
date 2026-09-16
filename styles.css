@@ -66,3 +66,139 @@ textarea{width:100%;height:392px;display:block;resize:none;border:0;outline:0;ba
  .bottom-bar{gap:12px;align-items:flex-end}.bottom-bar .message{flex:1}.primary-btn span{display:none}
  .footer{padding:24px 16px;gap:10px;flex-direction:column}
 }
+
+/* ─────────────────────────────
+   404 Page
+   ───────────────────────────── */
+
+.error-page{
+  min-height:calc(100vh - 72px);
+  display:grid;
+  place-items:center;
+  padding:50px 24px 70px;
+}
+
+.error-container{
+  width:100%;
+  max-width:680px;
+  text-align:center;
+}
+
+.error-mark{
+  width:52px;
+  height:52px;
+  margin:0 auto 28px;
+  display:grid;
+  place-items:center;
+
+  border:1px solid #3b4660;
+  border-radius:14px;
+
+  color:var(--accent2);
+  background:#121a2b;
+
+  font-family:"JetBrains Mono",ui-monospace,monospace;
+  font-size:15px;
+  font-weight:500;
+
+  box-shadow:0 12px 35px rgba(0,0,0,.2);
+}
+
+.error-code{
+  margin:0;
+
+  font-family:"JetBrains Mono",ui-monospace,monospace;
+  font-size:clamp(76px,14vw,150px);
+  line-height:.9;
+  font-weight:500;
+  letter-spacing:-9px;
+
+  background:linear-gradient(
+    100deg,
+    var(--accent),
+    var(--accent2)
+  );
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+}
+
+.error-title{
+  margin:28px 0 10px;
+  color:var(--text);
+  font-size:clamp(25px,4vw,34px);
+  line-height:1.2;
+  letter-spacing:-1px;
+  font-weight:700;
+}
+
+.error-copy{
+  max-width:500px;
+  margin:0 auto;
+
+  color:var(--muted);
+  font-size:15px;
+  line-height:1.7;
+}
+
+.error-actions{
+  display:flex;
+  justify-content:center;
+  gap:9px;
+  margin-top:28px;
+}
+
+.error-actions .primary-btn,
+.error-actions .secondary-btn{
+  text-decoration:none;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:40px;
+}
+
+.error-footer{
+  margin:34px 0 0;
+
+  color:#56627a;
+  font-family:"JetBrains Mono",ui-monospace,monospace;
+  font-size:10px;
+}
+
+@media(max-width:760px){
+  .error-page{
+    min-height:calc(100vh - 64px);
+    padding:34px 16px 50px;
+  }
+
+  .error-mark{
+    width:46px;
+    height:46px;
+    margin-bottom:24px;
+  }
+
+  .error-code{
+    font-size:clamp(72px,22vw,110px);
+    letter-spacing:-6px;
+  }
+
+  .error-title{
+    margin-top:22px;
+  }
+
+  .error-copy{
+    font-size:14px;
+  }
+
+  .error-actions{
+    flex-direction:column;
+    max-width:280px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .error-actions .primary-btn,
+  .error-actions .secondary-btn{
+    width:100%;
+  }
+}

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: /sitemap.xml
+Sitemap: https://chaoshelper.github.io/json-toolbox/sitemap.xml
