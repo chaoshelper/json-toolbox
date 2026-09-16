@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Free online JSON formatter, stringify tool, and JSON simplifier. Format, validate, stringify, minify, and simplify JSON instantly in your browser.">
+  <meta name="keywords" content="JSON formatter, JSON stringify, JSON simplifier, JSON minify, JSON validator, online JSON tool">
+  <meta name="theme-color" content="#0b1020">
+  <link rel="canonical" href="/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="JSON Toolbox — Format, Stringify & Simplify JSON">
+  <meta property="og:description" content="A fast, privacy-friendly JSON toolkit that runs entirely in your browser.">
+  <meta property="og:url" content="/">
+  <meta name="twitter:card" content="summary">
+  <title>JSON Toolbox — Format, Stringify & Simplify JSON Online</title>
+  <style>
+    /* Critical shell styling: keeps the page usable even before styles.css loads. */
+    :root{color-scheme:dark;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    body{margin:0;background:#0b1020;color:#eef2ff}
+  </style>
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebApplication",
+    "name":"JSON Toolbox",
+    "applicationCategory":"DeveloperApplication",
+    "operatingSystem":"Any",
+    "description":"Browser-based JSON formatter, stringify tool and JSON simplifier.",
+    "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="JSON Toolbox home">
+      <span class="brand-mark">{ }</span>
+      <span>JSON<span class="brand-accent">Toolbox</span></span>
+    </a>
+    <span class="privacy-pill"><span class="dot"></span> Runs in your browser</span>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">FAST · PRIVATE · DEVELOPER-FRIENDLY</p>
+      <h1>Make JSON <span>beautifully simple.</span></h1>
+      <p class="hero-copy">Format, stringify, and simplify JSON without uploading a single byte.</p>
+    </section>
+
+    <section class="tool-card" aria-label="JSON Toolbox">
+      <nav class="tabs" role="tablist" aria-label="JSON tools">
+        <button class="tab active" role="tab" aria-selected="true" aria-controls="panel-format" id="tab-format" data-mode="format">Format JSON</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="panel-stringify" id="tab-stringify" data-mode="stringify">Stringify</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="panel-simplify" id="tab-simplify" data-mode="simplify">Simplify</button>
+      </nav>
+
+      <div class="toolbar">
+        <div class="toolbar-left">
+          <span id="modeHint">Pretty-print & validate your JSON</span>
+        </div>
+        <div class="toolbar-actions">
+          <button class="ghost-btn" id="sampleBtn" type="button">Sample</button>
+          <button class="ghost-btn" id="clearBtn" type="button">Clear</button>
+        </div>
+      </div>
+
+      <div class="workspace">
+        <div class="editor-wrap">
+          <div class="panel-head">
+            <span>Input</span>
+            <span class="counter" id="inputCounter">0 chars</span>
+          </div>
+          <textarea id="input" spellcheck="false" autocomplete="off" autocapitalize="off" aria-label="JSON input" placeholder='Paste JSON here…&#10;&#10;Example: {"name":"Ada","skills":["JS","JSON"]}'></textarea>
+        </div>
+
+        <div class="swap-col" aria-hidden="true">
+          <span>→</span>
+        </div>
+
+        <div class="editor-wrap output-wrap">
+          <div class="panel-head">
+            <span>Output</span>
+            <span class="status" id="status">Ready</span>
+          </div>
+          <textarea id="output" spellcheck="false" readonly aria-label="JSON output" placeholder="Your result will appear here…"></textarea>
+        </div>
+      </div>
+
+      <div class="bottom-bar">
+        <div class="message" id="message" aria-live="polite">Paste JSON to get started.</div>
+        <div class="toolbar-actions">
+          <button class="secondary-btn" id="copyBtn" type="button">Copy output</button>
+          <button class="primary-btn" id="runBtn" type="button">Format JSON <span>⌘↵</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" aria-label="Benefits">
+      <article><strong>⚡ Instant</strong><span>No server round-trip.</span></article>
+      <article><strong>🔒 Private</strong><span>Your JSON stays on your device.</span></article>
+      <article><strong>✓ Validated</strong><span>Clear errors when JSON is invalid.</span></article>
+      <article><strong>⌨ Keyboard-ready</strong><span>Use Ctrl/Cmd + Enter to run.</span></article>
+    </section>
+
+    <section class="seo-copy">
+      <h2>One simple JSON toolkit for everyday development</h2>
+      <p><strong>Format JSON</strong> turns dense JSON into readable, indented data and validates the structure at the same time. <strong>Stringify</strong> converts a JSON value into a JavaScript-style JSON string with escaped quotes and newlines. <strong>Simplify</strong> creates a compact JSON representation by removing empty objects, empty arrays, null values, and blank strings.</p>
+      <p>Everything happens locally in your browser, making JSON Toolbox useful for API debugging, configuration files, payload inspection, frontend development, and quick data cleanup.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>JSON Toolbox</span>
+    <span>Free · No sign-up · No uploads</span>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
