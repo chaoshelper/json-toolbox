@@ -6,8 +6,6 @@ A static, dependency-free JSON utility SPA.
 - `index.html` — SEO-ready app shell
 - `styles.css` — responsive UI
 - `app.js` — formatting, stringify, simplification and clipboard logic
-- `robots.txt` — crawler rules
-- `sitemap.xml` — replace `https://YOUR-DOMAIN.example/` with the real canonical URL
 
 ## Deploy
 Upload all files to any static web server/CDN (Nginx, Apache, S3/CloudFront, Netlify, Vercel static hosting, GitHub Pages, etc.).
@@ -27,4 +25,4 @@ Before production:
 4. Keep the page title and description aligned with the exact search intent you want to target.
 
 ## Live Demo:
-https://chaoshelper.github.io/json-toolbox/
+https://tools.rnchaos.in/json-toolbox/

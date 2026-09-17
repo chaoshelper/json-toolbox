@@ -202,3 +202,34 @@ textarea{width:100%;height:392px;display:block;resize:none;border:0;outline:0;ba
     width:100%;
   }
 }
+
+/* ─────────────────────────────
+   AdSense & New Content Sections
+   ───────────────────────────── */
+
+.ad-banner-wrap { margin: 60px auto; max-width: 800px; }
+.ad-banner { background: var(--surface); border: 1px dashed var(--border); padding: 20px; text-align: center; color: var(--muted); border-radius: 12px; }
+.ad-placeholder-text { font-size: 12px; text-transform: uppercase; letter-spacing: 1px; }
+
+.how-it-works, .faq-section { max-width: 800px; margin: 80px auto; }
+.how-it-works h2, .faq-section h2 { text-align: center; margin-bottom: 40px; color: var(--text); }
+.steps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; }
+.step-card { background: var(--surface); border: 1px solid var(--border); padding: 24px; border-radius: 16px; }
+.step-num { width: 32px; height: 32px; background: var(--accent); color: white; display: grid; place-items: center; border-radius: 8px; font-weight: 700; margin-bottom: 16px; }
+
+.faq-grid { display: grid; gap: 16px; }
+.faq-card { background: var(--surface); border: 1px solid var(--border); padding: 20px; border-radius: 12px; }
+.faq-card h3 { margin: 0 0 8px; font-size: 16px; color: var(--text); }
+.faq-card p { margin: 0; font-size: 14px; color: var(--muted); line-height: 1.6; }
+
+.footer-links { display: flex; gap: 20px; }
+.footer-links a { color: #56627a; text-decoration: none; font-size: 12px; }
+.footer-links a:hover { color: var(--text); }
+
+.privacy-page { max-width: 800px; margin: 50px auto; padding: 20px; }
+.privacy-page h1 { font-size: 32px; margin-bottom: 10px; }
+.privacy-updated { color: var(--muted); font-size: 14px; margin-bottom: 30px; }
+.privacy-content h2 { font-size: 20px; margin-top: 30px; color: var(--text); }
+.privacy-content p { color: var(--muted); line-height: 1.8; margin-bottom: 15px; }
+.privacy-content a { color: var(--accent); }
+

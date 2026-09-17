@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://chaoshelper.github.io/json-toolbox/sitemap.xml
